@@ -1,0 +1,2 @@
+class BoatingTest < ApplicationRecord
+end
