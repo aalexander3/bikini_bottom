@@ -18,7 +18,6 @@ There's a little driving school under the sea. Instructors are testing students 
 ### Already Completed
 * rails new bikini_bottom
 * rails g model Student name:string
-<!-- * added 'faker' gem to Gemfile -->
 * rails g model Instructor name:string
 * rails g model BoatingTest student_id:integer instructor_id:integer completed:boolean test_name:string
 * created seed data
