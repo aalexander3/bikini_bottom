@@ -1,0 +1,11 @@
+<h3><%= @instructor.name %></h3>
+
+<% if @instructor.students.empty? %>
+  <h1>HEAVENS TO NEPTUNE!!!!</h1>
+  <h5><%= @instructor.name.upcase %> doesn't have any students yet... </h5>
+<% else %>
+  <h5><%= @instructor.name %>'s Students: </h5>
+  <% @instructor.students.each do |student| %>
+    <%= student.name %>
+  <% end %>
+<% end %>

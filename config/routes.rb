@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :instructors, only: [:index, :show]
+  resources :students, only: :show
+  resources :boating_tests, only: [:show, :new, :create, :edit, :update]
 end

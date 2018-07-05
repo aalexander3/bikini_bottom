@@ -1,0 +1,6 @@
+<h1><%= @boating_test.test_name %></h1>
+
+<h4>Student: <%= @boating_test.student_name %></h4>
+<h4>Instructor: <%= @boating_test.instructor.name %></h4>
+
+<%= link_to "Edit  #{@boating_test.test_name}", edit_boating_test_path(@boating_test) %>

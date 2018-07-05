@@ -29,8 +29,10 @@ There's a little driving school under the sea. Instructors are testing students 
 
 ##### Deliverables
 * create the associations between the models, then run rake db:seed and check that Instructors and Students have been made in the rails console
+
+
 * as a user, when I go to the instructors index page, I should see a list of instructors names with links to their show pages
-* when a user navigates to the instructors show page, the page should display the instructors name and all of the students that they have tested
+* when a user navigates to the instructors show page, the page should display the instructors name and all of the students that have signed up for a boating test
 * a user can go to a students show page and the page displays the students name and a list of the students boating tests' name and status
 * a user can create a new boating test by inputting the test name, inputting a student's name, and selecting the instructor
 * a user can edit a boating tests name and mark the test as complete
