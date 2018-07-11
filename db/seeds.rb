@@ -13,7 +13,6 @@ Instructor.create(name: "Mrs. Puff")
 Instructor.create(name: "Mr. Krabs")
 Instructor.create(name: "The Flying Dutchman")
 
-
 Student.create(name: "SpongeBob SquarePants")
 Student.create(name: "Patrick Star")
 Student.create(name: "Sandy Cheeks")
