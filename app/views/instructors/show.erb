@@ -1,4 +1,5 @@
 <h3><%= @instructor.name %></h3>
+<img src="<%= @instructor.image %>" alt="<%= @instructor.name %>">
 
 <% if @instructor.students.empty? %>
   <h1>HEAVENS TO NEPTUNE!!!!</h1>
@@ -9,3 +10,6 @@
     <%= student.name %>
   <% end %>
 <% end %>
+
+<%= button_to "Schedule an appointment", new_boating_test_path, method: 'get' %>
+<%= button_to "Back to all", instructors_path, method: 'get' %>

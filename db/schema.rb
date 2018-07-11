@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_05_134151) do
+ActiveRecord::Schema.define(version: 2018_07_11_133629) do
 
   create_table "boating_tests", force: :cascade do |t|
     t.integer "student_id"
@@ -25,12 +25,14 @@ ActiveRecord::Schema.define(version: 2018_07_05_134151) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image", default: "https://vignette.wikia.nocookie.net/spongebob/images/4/4b/SpongeBob%27s_pineapple_house_in_Season_6-2.png/revision/latest?cb=20150425072942"
   end
 
   create_table "students", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image", default: "https://vignette.wikia.nocookie.net/spongebob/images/4/4b/SpongeBob%27s_pineapple_house_in_Season_6-2.png/revision/latest?cb=20150425072942"
   end
 
 end
