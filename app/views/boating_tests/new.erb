@@ -5,17 +5,23 @@
  test name, inputting a student's name,
  and selecting the instructor -->
 <%= form_for @boating_test do |f| %>
-  <%= f.label :student_name %>
-  <%= f.text_field :student_name %>
+  <div class="form-group">
+    <%= f.label :student_name %>
+    <%= f.text_field :student_name, class:"form-control" %>
+  </div>
   <br>
-  <%= f.label :test_name %>
-  <%= f.text_field :test_name %>
+  <div class="form-group">
+    <%= f.label :test_name %>
+    <%= f.text_field :test_name, class:"form-control"%>
+  </div>
   <br>
-  <%= f.label :instructor_id %>
-  <!--  :instructor_id is what we are sending to the controller,
-        Instructor.all is what we are iterating over
-        :id is what data value should be sent under the key :instructor_id
-        :name is what is displayed to our user-->
-  <%= f.collection_select :instructor_id, Instructor.all, :id, :name %>
+  <div class="form-group">
+    <%= f.label :instructor_id %>
+    <!--  :instructor_id is what we are sending to the controller,
+          Instructor.all is what we are iterating over
+          :id is what data value should be sent under the key :instructor_id
+          :name is what is displayed to our user-->
+    <%= f.collection_select :instructor_id, Instructor.all, :id, :name, class:"form-control" %>
+  </div>
   <%= f.submit %>
 <% end %>
